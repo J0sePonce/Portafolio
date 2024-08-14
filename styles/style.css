@@ -1,0 +1,140 @@
+/* Definición de fuentes */
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/sf-pro-display_semibold.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('fonts/sf-pro-text_regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'SF Pro Text', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+    font-family: 'SF Pro Display', Arial, sans-serif;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 43%;
+    font-size: 2.1em;
+    font-family: 'SF Pro Display', Arial, sans-serif;
+}
+
+h2 {
+    font-size: 1.55em;
+}
+
+/* Estilos de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sección Sobre Mí */
+#sobre-mi {
+    padding: 20px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+/* Sección Proyectos */
+#proyectos {
+    padding: 20px;
+    padding-top: 2px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.proyecto {
+    margin: 20px 0;
+}
+
+.proyecto img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#miInput {
+    font-family: 'SF Pro Display';
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.imagenes-proyecto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.imagenes-proyecto img {
+    max-width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto h3 a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.proyecto h3 a:hover {
+    color: #4078c0;
+}
+
+.proyecto h3 a::after {
+    content: ' (ver en GitHub)';
+    font-size: 0.8em;
+    color: #4078c0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.proyecto h3 a:hover::after {
+    opacity: 1;
+}
